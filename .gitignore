@@ -1,0 +1,9 @@
+.internal/
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+.DS_Store
+*.xlsx~
+~$*.xlsx
+.vscode/
