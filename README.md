@@ -6,83 +6,95 @@ Modular planning tools to support process scale-up, tech transfer readiness, and
 
 ## Use Case
 
-This starter kit helps engineering and MSAT teams coordinate upstream-to-production process transfers. It focuses on systems-level planning, documentation maturity, and cross-functional alignment to reduce delays, clarify ownership, and build transfer readiness across technical, QA, and supply chain interfaces.
+This starter kit supports engineering, MSAT, and systems integration teams in managing upstream-to-production readiness. It focuses on documentation maturity, handoff alignment, and cross-functional coordination during process transfers, new tool installs, or scale-up initiatives.
 
-Common challenges this kit supports include:
+It is designed for environments where quality, speed, and team interoperability must be balanced — including GMP, ISO 9001, or multi-site operations.
+
+Common challenges this kit addresses:
 - Vague or shifting definitions of “ready for scale-up”
 - Misalignment between development and manufacturing expectations
-- Missing process documentation or tool readiness status
-- Cross-site transfer confusion and ownership ambiguity
-- Fragmented system readiness across facilities, QA, and ops teams
+- Cross-site transfer ambiguity and tool mismatches
+- Fragmented system readiness across QA, automation, and production
+- Risk of overloading teams with non-adoptable documentation or disconnected assets
 
 ---
 
 ## Folder Structure & Components
 
-Each subfolder contains implementation-ready scaffolds or templates to support specific initiatives:
+Each folder contains implementation-ready tools, templates, or trackers mapped to a specific initiative:
 
 ### `/templates/`
-- SOP-style forms
-- Process transfer checklists
-- Change management whitepapers
-- FMEA + CI ownership trackers
+- `cross_site_transfer_checklist.xlsx` — verifies cross-site process alignment
+- `handoff_criteria_template.docx` — defines gate conditions for engineering-to-ops transfer
+- `process_change_checklist.xlsx` — logs and stages change requests
+- `process_change_whitepaper_template.docx` — documents rationale and outcomes of major changes
+- `training_material_repository_template.xlsx` — organizes SOP and training asset readiness
+- `pareto_tracker_template.xlsx` — categorizes and visualizes problem contributors
+- `seq_validation_template.xlsx` — validates tool variability over time using SEQ methodology
 
 ### `/trackers/`
-- Gantt timelines
-- Task ownership matrices
-- BOM readiness logs
-- Process readiness and cross-site change trackers
+- `process_readiness_tracker.xlsx` — tracks transfer readiness across ownership lanes
+- `process_maturity_scorecard.xlsx` — evaluates documentation and process maturity against predefined criteria  
+- `engineering_ownership_matrix.xlsx` — clarifies responsibilities across functions
+- `training_completion_matrix.xlsx` — logs and verifies staff training status
+- `cross_site_change_tracker.xlsx` — synchronizes ongoing change propagation
+- `basic_bom_tracker_template.xlsx` — ensures BOM component traceability
+- `gantt_timeline_tracker.xlsx` — visualizes handoff and validation timelines
+- `tool_readiness_tracker.xlsx` — flags install and calibration completion state
+- `fmea_ci_tracker.xlsx` — captures known risks and ongoing mitigations
+- `ownership_vs_risk_matrix.xlsx` — aligns owners to high-risk failure modes
+- `scale_up_risk_score_tracker.xlsx` — quantifies readiness and risk by category
 
 ### `/calculators/`
-- Material usage-per-unit cost models
-- Tool availability (PM-based) calculators
+- `material_cost_calculator.xlsx` — maps material usage to cost per unit
+- `availability_calculator.xlsx` — estimates tool availability based on PM schedule
 
 ### `/reference/`
-- Glossary of readiness terms
-- Transfer-readiness logic maps
-- Tool install and IQ/OQ/PQ workflow guides
-
-### `/diagrams/` *(optional)*
-- Visual stage-gate maps
-- Transfer dependency flowcharts
-
-Each folder includes a `README.md` explaining usage and intent of the tools provided.
+- `tool_install_workflow_guide.docx` — walkthrough of IQ/OQ/PQ stages and owner logic
+- `transfer_readiness_mapping.md` — maps all assets to their usecase and readiness initiative
 
 ---
 
 ## How to Use
 
-This kit is designed to be modular — teams can adapt individual components or use them as a complete pre-transfer coordination package. Recommended starting points:
+This kit is designed to be modular and adaptive — teams can adopt tools individually or deploy them as a full coordination system. All files are editable and built for practical use in production or regulated environments.
 
-- For new process rollouts → Start with `/trackers/Process Readiness Tracker`
-- For cross-site transfer efforts → Use `/templates/Cross-Site Process Transfer Checklist`
-- For tool install coordination → Refer to `/reference/Tool Install Workflow Guide`
-- For risk reduction and CI → Begin with `/templates/FMEA + CI Tracker`
+Recommended entry points:
+- **New process introduction** → start with `process_readiness_tracker.xlsx`
+- **Cross-site transfer** → begin with `cross_site_transfer_checklist.xlsx`
+- **Tool installation** → follow `tool_install_workflow_guide.md`
+- **Validation consistency** → use `seq_validation_template.xlsx`
+- **Engineering-to-ops handoff** → apply `handoff_criteria_template.md`
+- **Risk-driven CI** → implement `fmea_ci_tracker.xlsx` and `pareto_tracker_template.xlsx`
 
-All Excel-based tools follow a uniform style with:
-- Pre-populated example rows
-- Conditional formatting where applicable
-- Standardized change log tabs
+All Excel-based tools include:
+- Pre-filled examples
+- Change logs
+- Conditional formatting (where applicable)
+
+Where initiatives span multiple functions, refer to `transfer_readiness_mapping.md` for coordinated adoption pathways.
+
+This kit intentionally balances thoroughness with usability. Assets are designed to reduce ambiguity, not increase documentation overhead. Teams may selectively adopt trackers that streamline execution. For broader rollout, assets can be aligned to existing review structures, or used as scaffolds for iterative feedback.
 
 ---
 
 ## Disclaimers
 
-This toolkit is not a regulatory guidance document, protocol library, or MES substitute. It does not replace internal SOPs, but is intended to support operational clarity and systems coordination around scale-up and transfer efforts.
+This kit is not a regulatory protocol library, execution system, or formal audit substitute. It complements — but does not replace — internal SOPs, MES, LIMS, or QMS tools. It is designed to support clarity, traceability, and systems coordination across readiness-driven initiatives.
 
 ---
 
 ## Who This Is / Isn’t For
 
 **This kit is designed for:**
-- MSAT engineers supporting pilot-to-GMP process transitions
-- Staff-level process or systems engineers managing tech transfer readiness
-- Systems integration leads coordinating across QA, facilities, and operations
+- MSAT and process engineers preparing upstream process transfers
+- Staff-level engineers managing readiness across tools, automation, QA
+- Cross-functional leads coordinating change, install, and production prep
 
 **This kit is not intended for:**
-- Auditors or certifying bodies (without customization)
-- Scientific teams developing product-specific protocols
-- Automation teams building full MES or LIMS integrations
+- Certifying bodies or auditors (without customization)
+- Scientists creating product-specific protocols
+- Automation-only teams building end-to-end system logic
 
 ---
 
