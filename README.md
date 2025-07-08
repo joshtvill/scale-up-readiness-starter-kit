@@ -62,9 +62,9 @@ This kit is designed to be modular and adaptive — teams can adopt tools indivi
 Recommended entry points:
 - **New process introduction** → start with `process_readiness_tracker.xlsx`
 - **Cross-site transfer** → begin with `cross_site_transfer_checklist.xlsx`
-- **Tool installation** → follow `tool_install_workflow_guide.md`
+- **Tool installation** → follow `tool_install_workflow_guide.docx`
 - **Validation consistency** → use `seq_validation_template.xlsx`
-- **Engineering-to-ops handoff** → apply `handoff_criteria_template.md`
+- **Engineering-to-ops handoff** → apply `handoff_criteria_template.docx`
 - **Risk-driven CI** → implement `fmea_ci_tracker.xlsx` and `pareto_tracker_template.xlsx`
 
 All Excel-based tools include:
