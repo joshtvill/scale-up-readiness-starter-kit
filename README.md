@@ -16,6 +16,8 @@ Common challenges this kit addresses:
 - Cross-site transfer ambiguity and tool mismatches
 - Fragmented system readiness across QA, automation, and production
 - Risk of overloading teams with non-adoptable documentation or disconnected assets
+- Lack of structured tools for system-level root cause analysis and shared learning
+- Troubleshooting breakdowns in integrated platforms where equipment, material, and process variables interact
 
 ---
 
@@ -31,6 +33,7 @@ Each folder contains implementation-ready tools, templates, or trackers mapped t
 - `training_material_repository_template.xlsx` — organizes SOP and training asset readiness
 - `pareto_tracker_template.xlsx` — categorizes and visualizes problem contributors
 - `seq_validation_template.xlsx` — validates tool variability over time using SEQ methodology
+- `postmortem_summary_template.docx` — documents root cause findings, CAPA actions, and lessons learned
 
 ### `/trackers/`
 - `process_readiness_tracker.xlsx` — tracks transfer readiness across ownership lanes
@@ -44,6 +47,7 @@ Each folder contains implementation-ready tools, templates, or trackers mapped t
 - `fmea_ci_tracker.xlsx` — captures known risks and ongoing mitigations
 - `ownership_vs_risk_matrix.xlsx` — aligns owners to high-risk failure modes
 - `scale_up_risk_score_tracker.xlsx` — quantifies readiness and risk by category
+- `system_issue_investigation_tracker.xlsx` — logs root cause models, supporting data, and planned experiments
 
 ### `/calculators/`
 - `material_cost_calculator.xlsx` — maps material usage to cost per unit
@@ -52,6 +56,7 @@ Each folder contains implementation-ready tools, templates, or trackers mapped t
 ### `/reference/`
 - `tool_install_workflow_guide.docx` — walkthrough of IQ/OQ/PQ stages and owner logic
 - `transfer_readiness_mapping.md` — maps all assets to their usecase and readiness initiative
+- `data_analysis_methods.md` — outlines data analysis strategies to troubleshoot ambiguous system issues
 
 ---
 
@@ -66,6 +71,7 @@ Recommended entry points:
 - **Validation consistency** → use `seq_validation_template.xlsx`
 - **Engineering-to-ops handoff** → apply `handoff_criteria_template.docx`
 - **Risk-driven CI** → implement `fmea_ci_tracker.xlsx` and `pareto_tracker_template.xlsx`
+- **Integrated issue investigation** → use `system_issue_investigation_tracker.xlsx`
 
 All Excel-based tools include:
 - Pre-filled examples
@@ -73,6 +79,7 @@ All Excel-based tools include:
 - Conditional formatting (where applicable)
 
 Where initiatives span multiple functions, refer to `transfer_readiness_mapping.md` for coordinated adoption pathways.
+For scoping ambiguous failures, refer to `data_analysis_methods.md` in `/reference/` to guide early data-driven troubleshooting steps.
 
 This kit intentionally balances thoroughness with usability. Assets are designed to reduce ambiguity, not increase documentation overhead. Teams may selectively adopt trackers that streamline execution. For broader rollout, assets can be aligned to existing review structures, or used as scaffolds for iterative feedback.
 
@@ -90,6 +97,7 @@ This kit is not a regulatory protocol library, execution system, or formal audit
 - MSAT and process engineers preparing upstream process transfers
 - Staff-level engineers managing readiness across tools, automation, QA
 - Cross-functional leads coordinating change, install, and production prep
+- Systems integration engineers investigating ambiguous platform issues and coordinating root cause resolution across hardware, software, and process teams
 
 **This kit is not intended for:**
 - Certifying bodies or auditors (without customization)
